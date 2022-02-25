@@ -1,43 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Flávio João Félix</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
+
 <body>
     <header>
-        <img class="logo" src="img/logotrybe.webp" alt="Estudante de Desenvolvimento Web - Trybe">
+        <img class="logo" src="img/logotrybe.webp" alt="Estudante de Desenvolvimento Web - Trybe" />
         <nav>
             <ul class="nav_links">
-                <li><a href="#nome">Nome</a></li>
-                <li><a href="#foto">Foto</a></li>
-                <li><a href="#descricao">Descrição</a></li>
+                <li><a href="#apresentacao">Apresentação</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#links">Links</a></li>
             </ul>
         </nav>
-        <a class="cta" href="#"><button>LinkedIn</button></a>
+        <a href="https://www.linkedin.com/in/flaviojoaofelix/" target="_blank"><button>LinkedIn</button></a>
     </header>
     <h1 id="titulo">Portfolio</h1>
-    <div id="foto">
-        <img src="img/me.jpg" alt="Foto de Flávio João Félix com um belo sorriso!">
-        <h2 id="nome">Flávio João Félix</h2>
+    <div id="conteudo">
+        <div id="apresentacao">
+            <img src="img/me.jpg" alt="Foto de Flávio João Félix com um belo sorriso!" />
+            <h2 id="nome">Flávio João Félix</h2>
+            <h3>Florianópolis/SC - Brasil</h3>
+            <p id="decricao">
+                Estudando atualmente na <a href="http://betrybe.com.br">Trybe</a>, pretendo me certificar em breve
+                <em>Desenvolvedor Web Full Stack</em>.
+                Apaixonado por <strong>computadores</strong>,
+                <strong>tecnologia</strong> e jogos eletrônicos desde a adolescência, seguirei carreira na área de
+                programação onde me encontrei.
+            </p>
+        </div>
+        <div id="habilidades">
+            <h3>Algumas Habilidades</h3>
+            <ul>
+                <li><strong>Certificado em Desenvolvimento Web com PHP</strong></li>
+                <li><strong>HTML & CSS</strong></li>
+                <li><strong>GitHub</strong></li>
+                <li>Sistemas Windows/Linux/MacOS</li>
+                <li>Manutenção de Computadores</li>
+                <li>Facilidade de Comunicação</li>
+            </ul>
+        </div>
+        <div id="links">
+            <h3>Links</h3>
+            <a href="img/me.jpg" target="_blank"><button>Minha Foto</button></a>
+            <a href="https://github.com/flaviojoaofelix" target="_blank"><button>Meu GitHub</button></a>
+            <a href="https://blog.betrybe.com/" target="_blank"><button>Blog da Trybe</button></a>
+        </div>
     </div>
-    <div id="nome">
-    </div>
-    <p id="decricao"><i>Um futuro Desenvolvedor Web Full Stack</i>, apaixonado por <b>computadores</b> e <b>tecnologia</b> desde a adolescência. Sou brasileiro e moro em Florianópolis/SC.</p>
-    <h3 id="habilidades">Algumas Habilidades</h3>
-    <ul>
-        <li><strong>Certificado em Desenvolvimento Web com PHP</strong></li>
-        <li><strong>Conhecimentos diversos em TI</strong></li>
-        <li>Facilidade de comunicação</li>
-    </ul>
-    <a href="img/me.jpg" id="fotolink">Minha Foto</a><br />
-    <a href="" target="_blank" id="bloglink">Blog da Trybe</a><br />
-    <br />
-    <h4>Indice:</h4> <a href="#titulo">Título</a> - <a href="#nome">Nome</a> - <a href="#foto">Foto</a> - <a href="#descricao">Descrição</a> - <a href="#habilidades">Habilidades</a> - <a href="#fotolink">Link da Foto</a> - <a href="#bloglink">Link do Blog</a>
 </body>
+
 </html>
