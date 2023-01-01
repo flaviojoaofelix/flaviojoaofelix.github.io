@@ -8,7 +8,7 @@
 2. npm install
 3. start using
 
-### Commands used in configuration
+### Commands used to create this boilerplate
 
 1. npm create vite@latest
 2. npm i
