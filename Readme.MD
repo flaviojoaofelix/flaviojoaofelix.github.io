@@ -2,6 +2,12 @@
 ## Vite, React, TypeScript
 ### ESLint (AirBnB), Vitest (RTL + Jest-DOM), React Router Dom
 
+### Installation
+
+1. Clone
+2. npm install
+3. start using
+
 ### Commands used in configuration
 
 1. npm create vite@latest
