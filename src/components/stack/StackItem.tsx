@@ -1,4 +1,4 @@
-import '../../styles/stack.css';
+import '../../styles/components/stack.css';
 
 type StackItemProps = {
   url: string;

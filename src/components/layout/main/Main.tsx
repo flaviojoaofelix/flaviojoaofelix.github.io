@@ -1,3 +1,5 @@
+import '../../../styles/components/layout/main.css';
+
 type MainProps = {
   children: React.ReactNode;
 };

@@ -1,4 +1,4 @@
-import '../../../styles/header.css';
+import '../../../styles/components/layout/header.css';
 
 type HeaderProps = {
   children: React.ReactNode;
