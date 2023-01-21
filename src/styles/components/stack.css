@@ -1,0 +1,9 @@
+.stack-item:hover {
+  fill: var(--bs-link-hover-color);
+}
+
+.stack-animate-item:hover {
+  fill: #ffffff;
+  animation: tada;
+  animation-duration: 2s;
+}
