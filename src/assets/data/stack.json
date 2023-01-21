@@ -1,0 +1,98 @@
+[
+  {
+    "url": "https://git-scm.com/",
+    "title": "Git",
+    "name": "git",
+    "color": "#F05032"
+  },
+  {
+    "url": "https://developer.mozilla.org/en-US/docs/Glossary/HTML5",
+    "title": "HTML",
+    "name": "html",
+    "color": "#E34F26"
+  },
+  {
+    "url": "https://www.w3.org/TR/CSS/#css",
+    "title": "CSS",
+    "name": "css",
+    "color": "#1572B6"
+  },
+  {
+    "url": "https://getbootstrap.com/",
+    "title": "Bootstrap",
+    "name": "bootstrap",
+    "color": "#7952B3"
+  },
+  {
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    "title": "JavaScript",
+    "name": "javascript",
+    "color": "#F7DF1E"
+  },
+  {
+    "url": "https://nodejs.org/",
+    "title": "NodeJS",
+    "name": "nodejs",
+    "color": "#339933"
+  },
+  {
+    "url": "https://www.typescriptlang.org/",
+    "title": "TypeScript",
+    "name": "typescript",
+    "color": "#3178C6"
+  },
+  {
+    "url": "https://reactjs.org/",
+    "title": "React",
+    "name": "react",
+    "color": "#61DAFB"
+  },
+  {
+    "url": "https://redux.js.org/",
+    "title": "Redux",
+    "name": "redux",
+    "color": "#764ABC"
+  },
+  {
+    "url": "https://expressjs.com/",
+    "title": "Express",
+    "name": "express",
+    "color": "#000000"
+  },
+  {
+    "url": "https://jestjs.io/",
+    "title": "Jest",
+    "name": "jest",
+    "color": "#C21325"
+  },
+  {
+    "url": "https://testing-library.com/",
+    "title": "Testing Library",
+    "name": "tl",
+    "color": "#E33332"
+  },
+  {
+    "url": "https://sequelize.org/",
+    "title": "Sequelize",
+    "name": "sequelize",
+    "color": "#52B0E7"
+  },
+  {
+    "url": "https://www.mysql.com/",
+    "title": "MySQL",
+    "name": "mysql",
+    "color": "#4479A1"
+  },
+  {
+    "url": "https://www.mongodb.com/",
+    "title": "MongoDB",
+    "name": "mongodb",
+    "color": "#47A248"
+  },
+  {
+    "url": "https://www.docker.com/",
+    "title": "Docker",
+    "name": "docker",
+    "color": "#2496ED"
+  }
+]

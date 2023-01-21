@@ -1,14 +1,18 @@
 import { HashRouter, Routes, Route } from 'react-router-dom';
 
-import Home from './pages/Home';
-import NotFound from './pages/NotFound';
+import { Home, Stack, NotFound, Portfolio } from './pages';
+import { LayoutWrapper } from './components/layout';
 
 export function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
+    <LayoutWrapper>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/stack" element={<Stack />} />
+        <Route path="/Portfolio" element={<Portfolio />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </LayoutWrapper>
   );
 }
 

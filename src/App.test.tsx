@@ -18,7 +18,7 @@ describe('App', () => {
       // ACT
       // EXPECT
       expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(
-        'Home Page'
+        import.meta.env.VITE_BRAND
       );
     });
 
@@ -29,7 +29,7 @@ describe('App', () => {
         </MemoryRouter>
       );
 
-      expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(
+      expect(screen.getByRole('heading', { level: 4 })).toHaveTextContent(
         '404 - Not Found'
       );
     });

@@ -22,15 +22,19 @@
 9. npm i -D @testing-library/react @testing-library/jest-dom
 10. npm install react-router-dom@6
 
+### Some used Features
+
+- <https://simpleicons.org/>
+- <https://animate.style/>
 
 ### References
 
-- https://www.youtube.com/watch?app=desktop&v=cchqeWY0Nak
-- https://airbnb.io/javascript/react/
-- https://prettier.io/docs/en/index.html
-- https://vitest.dev/
-- https://github.com/vitest-dev/vitest/blob/main/examples/react-testing-lib-msw/vite.config.ts
-- https://testing-library.com/
-- https://github.com/jsdom/jsdom
-- https://github.com/testing-library/jest-dom
-- https://kentcdodds.com/blog/common-mistakes-with-react-testing-library
+- <https://www.youtube.com/watch?app=desktop&v=cchqeWY0Nak>
+- <https://airbnb.io/javascript/react/>
+- <https://prettier.io/docs/en/index.html>
+- <https://vitest.dev/>
+- <https://github.com/vitest-dev/vitest/blob/main/examples/react-testing-lib-msw/vite.config.ts>
+- <https://testing-library.com/>
+- <https://github.com/jsdom/jsdom>
+- <https://github.com/testing-library/jest-dom>
+- <https://kentcdodds.com/blog/common-mistakes-with-react-testing-library>
