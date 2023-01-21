@@ -42,7 +42,6 @@ function NavBar() {
               </Link>
             </li>
             <li className="nav-item">
-              {/* <Link to="/contact" className="nav-link"> */}
               <span
                 className="nav-link pointer"
                 data-bs-toggle="modal"
@@ -50,7 +49,6 @@ function NavBar() {
               >
                 Contact
               </span>
-              {/* </Link> */}
             </li>
           </ul>
           <div className="d-flex">
