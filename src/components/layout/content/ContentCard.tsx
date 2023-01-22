@@ -1,15 +1,15 @@
 type ContentCardProps = {
   icon: string;
-  page: string;
+  title: string;
   children: React.ReactNode;
 };
 
-function ContentCard({ icon, page, children }: ContentCardProps): JSX.Element {
+function ContentCard({ icon, title, children }: ContentCardProps): JSX.Element {
   return (
-    <div className="card card-shadow">
+    <div className="card">
       <div className="card-header">
-        <h3 className="text-uppercase">
-          <i className={icon} /> {page}
+        <h3 className="mb-0 text-uppercase">
+          <i className={icon} /> {title}
         </h3>
       </div>
       <div className="card-body">{children}</div>
