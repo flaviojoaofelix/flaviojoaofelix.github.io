@@ -1,4 +1,12 @@
-function ImageCap() {
+type ImageCapProps = {
+  imageSRC?: string;
+  description: string;
+};
+
+function ImageCap({ imageSRC, description }: ImageCapProps): JSX.Element {
+  if (imageSRC) {
+    return <img src={imageSRC} alt={description} className="card-img-top" />;
+  }
   return (
     <svg
       className="card-img-top"
@@ -18,5 +26,9 @@ function ImageCap() {
     </svg>
   );
 }
+
+ImageCap.defaultProps = {
+  imageSRC: undefined,
+};
 
 export default ImageCap;

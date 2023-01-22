@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-
 import { ImageCap } from '../layout/elements';
 
 type PortfolioItemProps = {
@@ -18,30 +16,26 @@ function PortfolioItem({
   return (
     <div className="col d-flex justify-content-center">
       <div className="card h-100" style={{ width: '18rem' }}>
-        {image ? (
-          <img src={image} alt={description} className="card-img-top" />
-        ) : (
-          <ImageCap />
-        )}
+        <ImageCap imageSRC={image} description={description} />
         <div className="card-body">
           <h5 className="card-title text-truncate">{title}</h5>
           <p className="card-text text-truncate">{description}</p>
         </div>
         <div className="card-footer">
           <div className="d-grid gap-2 col-4 mx-auto">
-            <Link to={url}>
+            <a
+              href={url}
+              target="_blank"
+              rel="external noreferrer"
+              className="text-decoration-none"
+              data-bs-toggle="tooltip"
+              data-bs-title={title}
+            >
               <button className="btn btn-secondary" type="button">
                 Ver
               </button>
-            </Link>
+            </a>
           </div>
-          {/* <div className="d-grip gap-2">
-            <Link to={url}>
-              <button type="button" className="btn btn-primary">
-                Ver
-              </button>
-            </Link>
-          </div> */}
         </div>
       </div>
     </div>
@@ -49,7 +43,7 @@ function PortfolioItem({
 }
 
 PortfolioItem.defaultProps = {
-  image: ImageCap,
+  image: undefined,
 };
 
 export default PortfolioItem;
