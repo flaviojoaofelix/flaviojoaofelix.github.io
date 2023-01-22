@@ -1,8 +1,8 @@
-import { ContentCard } from '../components/layout/elements';
+import { ContentCard } from '../components/layout';
 
 function Home() {
   return (
-    <ContentCard icon="bi bi-person" page="about me">
+    <ContentCard icon="bi bi-person" title="about me">
       <h4 className="card-title">Olá,</h4>
       <h5 className="card-title">
         Meu nome é <strong>Flávio</strong>, tenho 37 anos e sou de
