@@ -22,20 +22,18 @@ function PortfolioItem({
           <p className="card-text text-truncate">{description}</p>
         </div>
         <div className="card-footer">
-          <div className="d-grid gap-2 col-4 mx-auto">
-            <a
-              href={url}
-              target="_blank"
-              rel="external noreferrer"
-              className="text-decoration-none"
-              data-bs-toggle="tooltip"
-              data-bs-title={title}
-            >
-              <button className="btn btn-secondary" type="button">
-                Ver
-              </button>
-            </a>
-          </div>
+          <a
+            href={url}
+            target="_blank"
+            rel="external noreferrer"
+            className="d-grid gap-1 text-decoration-none"
+            data-bs-toggle="tooltip"
+            data-bs-title={title}
+          >
+            <button className="btn btn-primary" type="button">
+              visitar
+            </button>
+          </a>
         </div>
       </div>
     </div>
