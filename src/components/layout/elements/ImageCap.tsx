@@ -5,7 +5,13 @@ type ImageCapProps = {
 
 function ImageCap({ imageSRC, description }: ImageCapProps): JSX.Element {
   if (imageSRC) {
-    return <img src={imageSRC} alt={description} className="card-img-top" />;
+    return (
+      <img
+        src={`https://flaviojoaofelix.dev/assets/images/${imageSRC}`}
+        alt={description}
+        className="card-img-top"
+      />
+    );
   }
   return (
     <svg
