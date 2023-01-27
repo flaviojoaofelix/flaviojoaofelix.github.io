@@ -1,40 +1,44 @@
-# React Boilerplate
+# Flávio João Félix Developer
 
-## Vite, React, TypeScript
-### ESLint (AirBnB), Vitest (RTL + Jest-DOM), React Router Dom
+## Just a Portfolio site made in React[1]
 
-### Installation
 
-1. Clone
+### Requirements
+
+- Node v18
+- NPM
+
+
+### Install
+
+1. [Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 2. npm install
-3. start using
 
-### Commands used to create this boilerplate
 
-1. npm create vite@latest
-2. npm i
-3. npm i -D eslint
-4. npx eslint --init
-5. npx install-peerdeps --dev eslint-config-airbnb
-6. npm i -D eslint-config-airbnb-typescript
-7. npm i -D prettier eslint-config-prettier eslint-plugin-prettier
-8. npm install -D vitest
-9. npm i -D @testing-library/react @testing-library/jest-dom
-10. npm install react-router-dom@6
+### Run
 
-### Some used Features
+- npm run dev
+> start local server for development
+- npm run build
+> transpile and generate build
+- npm run test
+> run the tests with vitest
+- npm run deploy
+> deploys the application to Github Pages
 
-- <https://simpleicons.org/>
+
+### See Live
+
+- <https://flaviojoaofelix.dev>
+- <https://flaviojoaofelix.github.io>
+
+
+### Resources Used
+
+- <https://github.com/flaviojoaofelix/boilerplate-react-ts>
+- <https://getbootstrap.com/>
+- <https://fonts.google.com>
 - <https://animate.style/>
+- <https://simpleicons.org/>
 
-### References
-
-- <https://www.youtube.com/watch?app=desktop&v=cchqeWY0Nak>
-- <https://airbnb.io/javascript/react/>
-- <https://prettier.io/docs/en/index.html>
-- <https://vitest.dev/>
-- <https://github.com/vitest-dev/vitest/blob/main/examples/react-testing-lib-msw/vite.config.ts>
-- <https://testing-library.com/>
-- <https://github.com/jsdom/jsdom>
-- <https://github.com/testing-library/jest-dom>
-- <https://kentcdodds.com/blog/common-mistakes-with-react-testing-library>
+[1:] Made with [React TS Boilerplate](https://github.com/flaviojoaofelix/boilerplate-react-ts)
