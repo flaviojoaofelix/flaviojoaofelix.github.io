@@ -1,6 +1,6 @@
 # Flávio João Félix Developer
 
-## Just a Portfolio site made in React[1]
+## Just a Portfolio site made in React[^1]
 
 
 ### Requirements
@@ -41,4 +41,4 @@
 - <https://animate.style/>
 - <https://simpleicons.org/>
 
-[1:] Made with [React TS Boilerplate](https://github.com/flaviojoaofelix/boilerplate-react-ts)
+[^1]: Made with [React TS Boilerplate](https://github.com/flaviojoaofelix/boilerplate-react-ts)
