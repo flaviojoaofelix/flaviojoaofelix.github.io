@@ -1,4 +1,4 @@
-# Flávio João Félix Developer
+# Flávio João Félix Full Stack Developer
 
 ## Just a Portfolio site made in React[^1]
 
