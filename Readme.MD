@@ -1,6 +1,8 @@
-# Flávio João Félix Full Stack Developer
+# Flávio João Félix 
 
-## Just a Portfolio site made in React[^1]
+## Full Stack Web Developer
+
+### Just a Portfolio site made in React[^1]
 
 
 ### Requirements
