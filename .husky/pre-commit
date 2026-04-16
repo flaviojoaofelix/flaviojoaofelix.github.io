@@ -1,0 +1,3 @@
+bunx tsc --noEmit
+bunx biome check ./src
+bunx vitest run
