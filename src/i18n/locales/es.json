@@ -1,0 +1,88 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "experience": "Experiencia",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "title": "Desarrollador Full Stack",
+    "subtitle": "Construyendo experiencias web modernas con pasión y precisión",
+    "cta_projects": "Ver Proyectos",
+    "cta_contact": "Contacto",
+    "label": "Sesión",
+    "tag_online": "estado: conectado",
+    "tag_stack": "stack: react + ts",
+    "tag_focus": "enfoque: sistemas de producto"
+  },
+  "about": {
+    "title": "Acerca de Mí",
+    "label": "Perfil",
+    "file_label": "acerca.txt",
+    "p1": "Desarrollador Web Full Stack con más de 5 años de experiencia en el desarrollo de sitios web y aplicaciones web. Actualmente trabajando en Dígitro Tecnologia, integrando el equipo de Front-end de NeoInteract, una solución de Contact Center para pequeñas y medianas empresas, utilizando tecnologías modernas como Node.js, TypeScript, React, Redux, Socket.IO, pruebas automatizadas y contenerización.",
+    "p2": "Tengo conocimientos en desarrollo Full Stack, trabajando con lenguajes como JavaScript, TypeScript, Python, PHP y frameworks como Node.js, Express y React. Dominio en bases de datos relacionales (MySQL) y no relacionales (MongoDB), además de experiencia en configuración y gestión de entornos web con herramientas como Git, SSH, CPanel, Plesk y servicios en la nube como AWS y DigitalOcean.",
+    "p3": "A lo largo de mi carrera, he trabajado como profesional autónomo desarrollando sitios web en WordPress, gestionando servicios de alojamiento y realizando mantenimiento de redes y servidores. También tengo experiencia en áreas complementarias como TI, administración, derecho y licitaciones, lo que me permite tener una visión amplia y estratégica de los proyectos. En constante evolución, busco contribuir con soluciones innovadoras y eficientes, combinando mi experiencia técnica con la capacidad de trabajar en equipo y resolver problemas de forma creativa."
+  },
+  "experience": {
+    "title": "Experiencia",
+    "label": "Registro",
+    "digitro": {
+      "role": "Desarrollador",
+      "description": "Desarrollo Front-end de NeoInteract, una solución de Contact Center dirigida a pequeñas y medianas empresas, parte del Nexus Suite, el ecosistema de comunicación corporativa de Dígitro. Tecnologías: JavaScript, Node.js, TypeScript, Socket.IO, React, Redux, Pruebas Automatizadas con Jest, Material UI, CSS, Docker y más, en una arquitectura multitenant alojada en la nube."
+    },
+    "ifon": {
+      "role": "Profesional Autónomo",
+      "bullets": [
+        "Desarrollo de sitios web en la plataforma WordPress",
+        "Gestión de alojamiento web con CPanel y Plesk",
+        "Creación, adaptación y personalización de sitios web utilizando PHP, HTML, CSS",
+        "Soporte e instalación de sistemas operativos y software — Linux, Windows y macOS",
+        "Ensamblaje, mantenimiento y configuración de redes y servidores",
+        "Ensamblaje y mantenimiento de computadoras",
+        "Soporte remoto"
+      ]
+    }
+  },
+  "skills": {
+    "title": "Habilidades",
+    "label": "Herramientas"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "label": "Builds",
+    "viewGithub": "Código Fuente",
+    "viewDemo": "Demostración",
+    "project-1": {
+      "description": "Un dashboard completo para la plataforma de Contact Center NeoInteract, con métricas de comunicación en tiempo real y gestión de agentes."
+    },
+    "project-2": {
+      "description": "Plataforma e-commerce full-stack con catálogo de productos, carrito de compras, integración de pagos y panel administrativo."
+    },
+    "project-3": {
+      "description": "API RESTful para gestión de tareas con autenticación, control de acceso basado en roles y notificaciones en tiempo real."
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "label": "Conexión",
+    "subtitle": "¡Conectemos! No dudes en contactarme a través de las plataformas de abajo.",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "email": "Correo"
+  },
+  "footer": {
+    "copyright": "© 2026 FJF.DEV",
+    "session_closed": "Sesión Cerrada",
+    "built_with": "Construido con ❤️ usando",
+    "ai_driven": "Desarrollo AI-driven con"
+  },
+  "common": {
+    "present": "Actual",
+    "theme": "Tema",
+    "language": "Idioma",
+    "skip_to_content": "Saltar al contenido"
+  }
+}

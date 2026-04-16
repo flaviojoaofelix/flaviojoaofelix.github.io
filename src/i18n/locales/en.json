@@ -1,0 +1,88 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "title": "Full Stack Developer",
+    "subtitle": "Building modern web experiences with passion and precision",
+    "cta_projects": "View Projects",
+    "cta_contact": "Contact Me",
+    "label": "Session",
+    "tag_online": "status: online",
+    "tag_stack": "stack: react + ts",
+    "tag_focus": "focus: product systems"
+  },
+  "about": {
+    "title": "About Me",
+    "label": "Profile",
+    "file_label": "about.txt",
+    "p1": "Full Stack Web Developer with over 5 years of experience in website and web application development. Currently working at Dígitro Tecnologia, joining the Front-end team of NeoInteract, a Contact Center solution for small and medium businesses, using modern technologies such as Node.js, TypeScript, React, Redux, Socket.IO, automated testing, and containerization.",
+    "p2": "I have knowledge in Full Stack development, working with languages like JavaScript, TypeScript, Python, PHP, and frameworks such as Node.js, Express, and React. Proficient in relational (MySQL) and non-relational (MongoDB) databases, as well as experience in configuring and managing web environments with tools like Git, SSH, CPanel, Plesk, and cloud services like AWS and DigitalOcean.",
+    "p3": "Throughout my career, I have worked as a freelance professional developing websites in WordPress, managing hosting services, and performing network and server maintenance. I also have experience in complementary areas such as IT, administration, law, and public procurement, which gives me a broad and strategic view of projects. Constantly evolving, I seek to contribute with innovative and efficient solutions, combining my technical experience with the ability to work in teams and solve problems creatively."
+  },
+  "experience": {
+    "title": "Experience",
+    "label": "Worklog",
+    "digitro": {
+      "role": "Developer",
+      "description": "Front-end development of NeoInteract, a Contact Center solution aimed at small and medium businesses, part of the Nexus Suite, Dígitro's corporate communication ecosystem. Technologies: JavaScript, Node.js, TypeScript, Socket.IO, React, Redux, Automated Testing with Jest, Material UI, CSS, Docker, and more, in a multitenant architecture hosted in the cloud."
+    },
+    "ifon": {
+      "role": "Freelance Professional",
+      "bullets": [
+        "Website development on the WordPress platform",
+        "Web hosting management with CPanel and Plesk software",
+        "Creation, adaptation, and customization of websites using PHP, HTML, CSS",
+        "Support and installation of operating systems and software — Linux, Windows, and macOS",
+        "Assembly, maintenance, and configuration of networks and servers",
+        "Assembly and maintenance of computers",
+        "Remote support"
+      ]
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "label": "Toolchain"
+  },
+  "projects": {
+    "title": "Projects",
+    "label": "Builds",
+    "viewGithub": "Source Code",
+    "viewDemo": "Live Demo",
+    "project-1": {
+      "description": "A comprehensive dashboard for the NeoInteract Contact Center platform, featuring real-time communication metrics and agent management."
+    },
+    "project-2": {
+      "description": "Full-stack e-commerce platform with product catalog, shopping cart, payment integration, and admin panel."
+    },
+    "project-3": {
+      "description": "RESTful API for task management with authentication, role-based access control, and real-time notifications."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "label": "Connect",
+    "subtitle": "Let's connect! Feel free to reach out through the platforms below.",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "email": "Email"
+  },
+  "footer": {
+    "copyright": "© 2026 FJF.DEV",
+    "session_closed": "Session Closed",
+    "built_with": "Built with ❤️ using",
+    "ai_driven": "AI-driven development with"
+  },
+  "common": {
+    "present": "Present",
+    "theme": "Theme",
+    "language": "Language",
+    "skip_to_content": "Skip to content"
+  }
+}
