@@ -4,14 +4,23 @@ export const projects: Project[] = [
   {
     id: "neointeract",
     title: "NeoInteract",
-    technologies: ["React", "TypeScript", "Redux", "Socket.IO", "Jest", "Docker"],
+    technologies: [
+      "React",
+      "TypeScript",
+      "Redux",
+      "Material UI",
+      "Socket.IO",
+      "OpenAPI",
+      "Jest",
+      "Docker",
+    ],
     liveUrl: "https://digitro.com/neointeract",
     linkLabel: "projects.viewSite",
   },
   {
     id: "persona-nocode",
     title: "Persona No-code",
-    technologies: ["React", "TypeScript", "Node.js", "Docker"],
+    technologies: ["React", "TypeScript", "Zustand", "Material UI"],
     liveUrl: "https://digitro.com/persona",
     linkLabel: "projects.viewSite",
   },
@@ -23,8 +32,8 @@ export const projects: Project[] = [
   },
   {
     id: "dt-frontend-digitro",
-    title: "Dígitro Chat Dashboard",
-    technologies: ["React", "JavaScript", "CSS", "REST APIs"],
+    title: "DT Frontend Dígitro",
+    technologies: ["React", "JavaScript", "CSS/Bootstrap", "Socket.io"],
     github: "https://github.com/flaviojoaofelix/dt-frontend-digitro",
   },
   {
