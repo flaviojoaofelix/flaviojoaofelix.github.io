@@ -10,12 +10,17 @@ vi.mock("@/i18n", () => ({
         "projects.title": "Projects",
         "projects.viewGithub": "Source Code",
         "projects.viewDemo": "Live Demo",
-        "projects.project-1.description":
-          "A comprehensive dashboard for the NeoInteract Contact Center platform, featuring real-time communication metrics and agent management.",
-        "projects.project-2.description":
-          "Full-stack e-commerce platform with product catalog, shopping cart, payment integration, and admin panel.",
-        "projects.project-3.description":
-          "RESTful API for task management with authentication, role-based access control, and real-time notifications.",
+        "projects.viewSite": "Visit Site",
+        "projects.neointeract.description":
+          "Contact Center solution for small and medium businesses. Developed the front-end with React, TypeScript, Redux, and Socket.IO.",
+        "projects.persona-nocode.description":
+          "No-code visual editor for the Persona platform. Led a complete front-end refactoring of the editor with React and TypeScript.",
+        "projects.catalogo-movingsale.description":
+          "Minimalist landing page for a residential furniture moving sale, built with React, TypeScript, and Vite.",
+        "projects.dt-frontend-digitro.description":
+          "Technical challenge for Dígitro's hiring process — a React application for managing chat service calls.",
+        "projects.trybe-recipes-app.description":
+          "Collaborative web application for browsing food and drink recipes using external APIs. Developed as a group project with Scrum.",
       };
       return translations[key] ?? key;
     },
@@ -40,20 +45,24 @@ describe("ProjectsSection", () => {
     expect(screen.getByText("Projects")).toBeInTheDocument();
   });
 
-  it("renders 3 project cards", () => {
+  it("renders 5 project cards", () => {
     render(<ProjectsSection />);
 
-    expect(screen.getByTestId("project-card-project-1")).toBeInTheDocument();
-    expect(screen.getByTestId("project-card-project-2")).toBeInTheDocument();
-    expect(screen.getByTestId("project-card-project-3")).toBeInTheDocument();
+    expect(screen.getByTestId("project-card-neointeract")).toBeInTheDocument();
+    expect(screen.getByTestId("project-card-persona-nocode")).toBeInTheDocument();
+    expect(screen.getByTestId("project-card-catalogo-movingsale")).toBeInTheDocument();
+    expect(screen.getByTestId("project-card-dt-frontend-digitro")).toBeInTheDocument();
+    expect(screen.getByTestId("project-card-trybe-recipes-app")).toBeInTheDocument();
   });
 
   it("renders project titles from data", () => {
     render(<ProjectsSection />);
 
-    expect(screen.getByText("NeoInteract Dashboard")).toBeInTheDocument();
-    expect(screen.getByText("E-Commerce Platform")).toBeInTheDocument();
-    expect(screen.getByText("Task Management API")).toBeInTheDocument();
+    expect(screen.getByText("NeoInteract")).toBeInTheDocument();
+    expect(screen.getByText("Persona No-code")).toBeInTheDocument();
+    expect(screen.getByText("Catálogo Moving Sale")).toBeInTheDocument();
+    expect(screen.getByText("Dígitro Chat Dashboard")).toBeInTheDocument();
+    expect(screen.getByText("Recipes App")).toBeInTheDocument();
   });
 
   it("renders project descriptions from locale JSON via t()", () => {
@@ -61,17 +70,17 @@ describe("ProjectsSection", () => {
 
     expect(
       screen.getByText(
-        "A comprehensive dashboard for the NeoInteract Contact Center platform, featuring real-time communication metrics and agent management.",
+        "Contact Center solution for small and medium businesses. Developed the front-end with React, TypeScript, Redux, and Socket.IO.",
       ),
     ).toBeInTheDocument();
     expect(
       screen.getByText(
-        "Full-stack e-commerce platform with product catalog, shopping cart, payment integration, and admin panel.",
+        "No-code visual editor for the Persona platform. Led a complete front-end refactoring of the editor with React and TypeScript.",
       ),
     ).toBeInTheDocument();
     expect(
       screen.getByText(
-        "RESTful API for task management with authentication, role-based access control, and real-time notifications.",
+        "Minimalist landing page for a residential furniture moving sale, built with React, TypeScript, and Vite.",
       ),
     ).toBeInTheDocument();
   });
@@ -80,56 +89,61 @@ describe("ProjectsSection", () => {
     render(<ProjectsSection />);
 
     const reactChips = screen.getAllByText("React");
-    expect(reactChips).toHaveLength(2);
-    expect(screen.getByText("TypeScript")).toBeInTheDocument();
-    expect(screen.getByText("Redux")).toBeInTheDocument();
+    expect(reactChips).toHaveLength(5);
+
+    const tsChips = screen.getAllByText("TypeScript");
+    expect(tsChips).toHaveLength(3);
+
+    const reduxChips = screen.getAllByText("Redux");
+    expect(reduxChips).toHaveLength(2);
+
     expect(screen.getByText("Socket.IO")).toBeInTheDocument();
-
-    const nodejsChips = screen.getAllByText("Node.js");
-    expect(nodejsChips).toHaveLength(2);
-    expect(screen.getByText("MongoDB")).toBeInTheDocument();
-    expect(screen.getByText("Docker")).toBeInTheDocument();
-
-    expect(screen.getByText("Express")).toBeInTheDocument();
-    expect(screen.getByText("MySQL")).toBeInTheDocument();
-    expect(screen.getByText("JWT")).toBeInTheDocument();
+    expect(screen.getAllByText("Docker")).toHaveLength(2);
+    expect(screen.getByText("Vite")).toBeInTheDocument();
+    expect(screen.getByText("Tailwind CSS")).toBeInTheDocument();
+    expect(screen.getByText("Scrum")).toBeInTheDocument();
   });
 
-  it("renders GitHub link button for all projects", () => {
+  it("renders GitHub link buttons for open-source projects", () => {
     render(<ProjectsSection />);
 
     const githubButtons = screen.getAllByText("Source Code");
     expect(githubButtons).toHaveLength(3);
 
-    githubButtons.forEach((button) => {
-      expect(button).toBeInTheDocument();
+    const githubHrefs = githubButtons.map((button) => {
       const link = button.closest("a");
-      if (link === null) {
+      if (!link) {
         throw new Error("Button should be wrapped in an anchor tag");
       }
-      expect(link).toHaveAttribute("href", "https://github.com/flaviojoaofelix");
       expect(link).toHaveAttribute("target", "_blank");
       expect(link).toHaveAttribute("rel", "noopener noreferrer");
+      return link.getAttribute("href");
     });
+
+    expect(githubHrefs).toContain(
+      "https://github.com/flaviojoaofelix/catalogo-venda-moveis-ap-615",
+    );
+    expect(githubHrefs).toContain("https://github.com/flaviojoaofelix/dt-frontend-digitro");
+    expect(githubHrefs).toContain("https://github.com/flaviojoaofelix/trybe-project-recipes-app");
   });
 
-  it("renders Live Demo link button only for project-2", () => {
+  it("renders Visit Site link buttons for Dígitro products", () => {
     render(<ProjectsSection />);
 
-    const demoButtons = screen.getAllByText("Live Demo");
-    expect(demoButtons).toHaveLength(1);
+    const siteButtons = screen.getAllByText("Visit Site");
+    expect(siteButtons).toHaveLength(2);
 
-    const demoButton = demoButtons[0];
-    if (!demoButton) {
-      throw new Error("Demo button not found");
-    }
-    expect(demoButton).toBeInTheDocument();
-    const link = demoButton.closest("a");
-    if (link === null) {
-      throw new Error("Button should be wrapped in an anchor tag");
-    }
-    expect(link).toHaveAttribute("href", "https://example.com");
-    expect(link).toHaveAttribute("target", "_blank");
-    expect(link).toHaveAttribute("rel", "noopener noreferrer");
+    const siteHrefs = siteButtons.map((button) => {
+      const link = button.closest("a");
+      if (!link) {
+        throw new Error("Button should be wrapped in an anchor tag");
+      }
+      expect(link).toHaveAttribute("target", "_blank");
+      expect(link).toHaveAttribute("rel", "noopener noreferrer");
+      return link.getAttribute("href");
+    });
+
+    expect(siteHrefs).toContain("https://digitro.com/neointeract");
+    expect(siteHrefs).toContain("https://digitro.com/persona");
   });
 });
