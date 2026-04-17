@@ -55,14 +55,21 @@
     "label": "Builds",
     "viewGithub": "Código Fonte",
     "viewDemo": "Demonstração",
-    "project-1": {
-      "description": "Um dashboard completo para a plataforma de Contact Center NeoInteract, com métricas de comunicação em tempo real e gerenciamento de agentes."
+    "viewSite": "Visitar Site",
+    "neointeract": {
+      "description": "Solução de Contact Center para pequenos e médios negócios, integrante do Nexus Suite, ecossistema de comunicação corporativa da Dígitro. Desenvolvimento do front-end com React, TypeScript, Redux e Socket.IO em arquitetura multi-tenant na nuvem."
     },
-    "project-2": {
-      "description": "Plataforma e-commerce full-stack com catálogo de produtos, carrinho de compras, integração de pagamento e painel administrativo."
+    "persona-nocode": {
+      "description": "Editor visual No-code para a plataforma Persona, utilizado para construção de fluxos de URA e chatbots. Liderei uma refatoração completa do front-end do editor, reconstruindo a interface com React e TypeScript."
     },
-    "project-3": {
-      "description": "API RESTful para gerenciamento de tarefas com autenticação, controle de acesso baseado em funções e notificações em tempo real."
+    "catalogo-movingsale": {
+      "description": "Landing page minimalista para venda de móveis residenciais, construída com React, TypeScript e Vite. Catálogo de produtos com imagens e integração de contato."
+    },
+    "dt-frontend-digitro": {
+      "description": "Desafio técnico do processo seletivo da Dígitro — aplicação React para gerenciamento de chamadas de chat com acompanhamento em tempo real, filtros e interface de dashboard responsiva."
+    },
+    "trybe-recipes-app": {
+      "description": "Aplicação web colaborativa para navegação de receitas de pratos e bebidas utilizando APIs externas. Desenvolvido em grupo com metodologia Scrum, React, Redux e práticas ágeis."
     }
   },
   "contact": {

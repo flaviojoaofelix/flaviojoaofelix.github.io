@@ -55,14 +55,21 @@
     "label": "Builds",
     "viewGithub": "Source Code",
     "viewDemo": "Live Demo",
-    "project-1": {
-      "description": "A comprehensive dashboard for the NeoInteract Contact Center platform, featuring real-time communication metrics and agent management."
+    "viewSite": "Visit Site",
+    "neointeract": {
+      "description": "Contact Center solution for small and medium businesses, part of the Nexus Suite corporate communication ecosystem. Developed the front-end with React, TypeScript, Redux, and Socket.IO in a multi-tenant cloud architecture."
     },
-    "project-2": {
-      "description": "Full-stack e-commerce platform with product catalog, shopping cart, payment integration, and admin panel."
+    "persona-nocode": {
+      "description": "No-code visual editor for the Persona platform, used to build IVR flows and chatbots. Led a complete front-end refactoring of the editor, rebuilding the UI with React and TypeScript."
     },
-    "project-3": {
-      "description": "RESTful API for task management with authentication, role-based access control, and real-time notifications."
+    "catalogo-movingsale": {
+      "description": "Minimalist landing page for a residential furniture moving sale, built with React, TypeScript, and Vite. Features product catalog with images and contact integration."
+    },
+    "dt-frontend-digitro": {
+      "description": "Technical challenge for Dígitro's hiring process — a React application for managing chat service calls with real-time status tracking, filtering, and a responsive dashboard interface."
+    },
+    "trybe-recipes-app": {
+      "description": "Collaborative web application for browsing food and drink recipes using external APIs. Developed as a group project following Scrum methodology with React, Redux, and agile practices."
     }
   },
   "contact": {

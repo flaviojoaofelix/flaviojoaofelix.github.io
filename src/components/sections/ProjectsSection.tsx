@@ -106,7 +106,7 @@ export function ProjectsSection() {
                         >
                           <span className="inline-flex items-center gap-2">
                             <ExternalLink size={16} />
-                            {t("projects.viewDemo")}
+                            {t(project.linkLabel ?? "projects.viewDemo")}
                           </span>
                         </Button>
                       </a>
