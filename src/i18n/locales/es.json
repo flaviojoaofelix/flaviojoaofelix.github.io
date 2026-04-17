@@ -60,7 +60,7 @@
       "description": "Solución de Contact Center para pequeñas y medianas empresas, parte del ecosistema de comunicación corporativa Nexus Suite. Desarrollo del front-end con React, TypeScript, Redux y Socket.IO en arquitectura multi-tenant en la nube."
     },
     "persona-nocode": {
-      "description": "Editor visual No-code para la plataforma Persona, utilizado para construir flujos de IVR y chatbots. Lideré una refactorización completa del front-end del editor, reconstruyendo la interfaz con React y TypeScript."
+      "description": "Editor visual No-code para construir flujos de IVR y chatbots en la plataforma Persona. Lideré una refactorización front-end AI-driven enfocada en reducir los costos de mantenimiento mediante la modernización arquitectónica — adopción de TypeScript, Zustand para gestión de estado, migración a Material UI, arquitectura feature-based y Atomic Design — entregando un ecosistema más mantenible y cohesivo."
     },
     "catalogo-movingsale": {
       "description": "Landing page minimalista para venta de muebles residenciales, construida con React, TypeScript y Vite. Catálogo de productos con imágenes e integración de contacto."

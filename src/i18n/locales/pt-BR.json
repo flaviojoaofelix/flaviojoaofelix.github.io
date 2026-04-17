@@ -60,7 +60,7 @@
       "description": "Solução de Contact Center para pequenos e médios negócios, integrante do Nexus Suite, ecossistema de comunicação corporativa da Dígitro. Desenvolvimento do front-end com React, TypeScript, Redux e Socket.IO em arquitetura multi-tenant na nuvem."
     },
     "persona-nocode": {
-      "description": "Editor visual No-code para a plataforma Persona, utilizado para construção de fluxos de URA e chatbots. Liderei uma refatoração completa do front-end do editor, reconstruindo a interface com React e TypeScript."
+      "description": "Editor visual No-code para construção de fluxos de URA e chatbots na plataforma Persona. Liderei uma refatoração front-end AI-driven com foco na redução dos custos de manutenção por meio da modernização arquitetural — adoção de TypeScript, Zustand para gerenciamento de estado, migração para Material UI, arquitetura feature-based e Atomic Design — entregando um ecossistema mais manutenível e coeso."
     },
     "catalogo-movingsale": {
       "description": "Landing page minimalista para venda de móveis residenciais, construída com React, TypeScript e Vite. Catálogo de produtos com imagens e integração de contato."

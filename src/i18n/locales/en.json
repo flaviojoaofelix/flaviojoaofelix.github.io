@@ -60,7 +60,7 @@
       "description": "Contact Center solution for small and medium businesses, part of the Nexus Suite corporate communication ecosystem. Developed the front-end with React, TypeScript, Redux, and Socket.IO in a multi-tenant cloud architecture."
     },
     "persona-nocode": {
-      "description": "No-code visual editor for the Persona platform, used to build IVR flows and chatbots. Led a complete front-end refactoring of the editor, rebuilding the UI with React and TypeScript."
+      "description": "No-code visual editor for building IVR flows and chatbots on the Persona platform. Spearheaded an AI-driven front-end refactoring focused on reducing maintenance costs through architectural modernization — TypeScript adoption, Zustand state management, Material UI migration, feature-based architecture, and Atomic Design — delivering a more maintainable and cohesive ecosystem."
     },
     "catalogo-movingsale": {
       "description": "Minimalist landing page for a residential furniture moving sale, built with React, TypeScript, and Vite. Features product catalog with images and contact integration."
