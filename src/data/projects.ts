@@ -2,22 +2,35 @@ import type { Project } from "@/types";
 
 export const projects: Project[] = [
   {
-    id: "project-1",
-    title: "NeoInteract Dashboard",
-    technologies: ["React", "TypeScript", "Redux", "Socket.IO"],
-    github: "https://github.com/flaviojoaofelix",
+    id: "neointeract",
+    title: "NeoInteract",
+    technologies: ["React", "TypeScript", "Redux", "Socket.IO", "Jest", "Docker"],
+    liveUrl: "https://digitro.com/neointeract",
+    linkLabel: "projects.viewSite",
   },
   {
-    id: "project-2",
-    title: "E-Commerce Platform",
-    technologies: ["Node.js", "React", "MongoDB", "Docker"],
-    github: "https://github.com/flaviojoaofelix",
-    liveUrl: "https://example.com",
+    id: "persona-nocode",
+    title: "Persona No-code",
+    technologies: ["React", "TypeScript", "Node.js", "Docker"],
+    liveUrl: "https://digitro.com/persona",
+    linkLabel: "projects.viewSite",
   },
   {
-    id: "project-3",
-    title: "Task Management API",
-    technologies: ["Node.js", "Express", "MySQL", "JWT"],
-    github: "https://github.com/flaviojoaofelix",
+    id: "catalogo-movingsale",
+    title: "Catálogo Moving Sale",
+    technologies: ["React", "TypeScript", "Vite", "Tailwind CSS"],
+    github: "https://github.com/flaviojoaofelix/catalogo-venda-moveis-ap-615",
+  },
+  {
+    id: "dt-frontend-digitro",
+    title: "Dígitro Chat Dashboard",
+    technologies: ["React", "JavaScript", "CSS", "REST APIs"],
+    github: "https://github.com/flaviojoaofelix/dt-frontend-digitro",
+  },
+  {
+    id: "trybe-recipes-app",
+    title: "Recipes App",
+    technologies: ["React", "JavaScript", "Redux", "REST APIs", "Scrum"],
+    github: "https://github.com/flaviojoaofelix/trybe-project-recipes-app",
   },
 ];

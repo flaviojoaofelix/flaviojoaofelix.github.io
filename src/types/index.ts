@@ -42,6 +42,7 @@ export interface Project {
   readonly technologies: readonly string[];
   readonly github?: string;
   readonly liveUrl?: string;
+  readonly linkLabel?: string;
   readonly image?: string;
   // description comes from i18n: t(`projects.${id}.description`)
 }
