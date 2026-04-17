@@ -223,6 +223,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 <div align="center">
 
-**[flaviojoaofelix.dev](https://flaviojoaofelix.dev)** · [LinkedIn](https://linkedin.com/in/flaviojoaofelix) · [GitHub](https://github.com/flaviojoaofelix) · [Email](mailto:flaviojoaofelix.dev@gmail.com)
+**[flaviojoaofelix.dev](https://flaviojoaofelix.dev)** · [LinkedIn](https://linkedin.com/in/flaviojoaofelix) · [GitHub](https://github.com/flaviojoaofelix)
 
 </div>
