@@ -61,7 +61,7 @@ describe("ProjectsSection", () => {
     expect(screen.getByText("NeoInteract")).toBeInTheDocument();
     expect(screen.getByText("Persona No-code")).toBeInTheDocument();
     expect(screen.getByText("Catálogo Moving Sale")).toBeInTheDocument();
-    expect(screen.getByText("Dígitro Chat Dashboard")).toBeInTheDocument();
+    expect(screen.getByText("DT Frontend Dígitro")).toBeInTheDocument();
     expect(screen.getByText("Recipes App")).toBeInTheDocument();
   });
 
@@ -98,7 +98,7 @@ describe("ProjectsSection", () => {
     expect(reduxChips).toHaveLength(2);
 
     expect(screen.getByText("Socket.IO")).toBeInTheDocument();
-    expect(screen.getAllByText("Docker")).toHaveLength(2);
+    expect(screen.getByText("Docker")).toBeInTheDocument();
     expect(screen.getByText("Vite")).toBeInTheDocument();
     expect(screen.getByText("Tailwind CSS")).toBeInTheDocument();
     expect(screen.getByText("Scrum")).toBeInTheDocument();
