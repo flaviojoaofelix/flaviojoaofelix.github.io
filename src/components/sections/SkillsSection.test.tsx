@@ -19,24 +19,23 @@ describe("SkillsSection", () => {
     expect(title.tagName).toBe("H2");
   });
 
-  it("renders exactly 8 category cards", () => {
+  it("renders exactly 7 category cards", () => {
     render(<SkillsSection />);
 
     const categories = screen.getAllByTestId(/skill-category-/);
-    expect(categories.length).toBe(8);
+    expect(categories.length).toBe(7);
   });
 
-  it("renders all 8 category titles", () => {
+  it("renders all 7 category titles", () => {
     render(<SkillsSection />);
 
     expect(screen.getAllByText("Frontend").length).toBeGreaterThan(0);
     expect(screen.getAllByText("Backend").length).toBeGreaterThan(0);
-    expect(screen.getAllByText("Quality Assurance").length).toBeGreaterThan(0);
-    expect(screen.getAllByText("DevOps & Cloud").length).toBeGreaterThan(0);
-    expect(screen.getAllByText("Automation").length).toBeGreaterThan(0);
     expect(screen.getAllByText("Databases").length).toBeGreaterThan(0);
-    expect(screen.getAllByText("Others Programming Languages").length).toBeGreaterThan(0);
-    expect(screen.getAllByText("Others").length).toBeGreaterThan(0);
+    expect(screen.getAllByText("Programming Languages").length).toBeGreaterThan(0);
+    expect(screen.getAllByText("Testing & Quality").length).toBeGreaterThan(0);
+    expect(screen.getAllByText("DevOps & Cloud").length).toBeGreaterThan(0);
+    expect(screen.getAllByText("Architecture & Practices").length).toBeGreaterThan(0);
   });
 
   it("renders skill chips for each category", () => {
@@ -56,47 +55,44 @@ describe("SkillsSection", () => {
     expect(backendCategory.textContent).toContain("NestJS");
     expect(backendCategory.textContent).toContain("FastAPI");
     expect(backendCategory.textContent).toContain("Socket.IO");
-
-    const devopsCategory = screen.getByTestId("skill-category-DevOps & Cloud");
-    expect(devopsCategory.textContent).toContain("Docker");
-    expect(devopsCategory.textContent).toContain("AWS");
-    expect(devopsCategory.textContent).toContain("Digital Ocean");
-    expect(devopsCategory.textContent).toContain("Gitlab");
-    expect(devopsCategory.textContent).toContain("Github");
-    expect(devopsCategory.textContent).toContain("Proxmox");
-
-    const qaCategory = screen.getByTestId("skill-category-Quality Assurance");
-    expect(qaCategory.textContent).toContain("Vitest");
-    expect(qaCategory.textContent).toContain("Playwright");
-
-    const automationCategory = screen.getByTestId("skill-category-Automation");
-    expect(automationCategory.textContent).toContain("n8n");
-    expect(automationCategory.textContent).toContain("openclaw");
+    expect(backendCategory.textContent).toContain("GraphQL");
+    expect(backendCategory.textContent).toContain("REST APIs");
+    expect(backendCategory.textContent).toContain("WebSockets");
+    expect(backendCategory.textContent).toContain("WebRTC");
+    expect(backendCategory.textContent).toContain("n8n");
+    expect(backendCategory.textContent).toContain("openclaw");
 
     const databasesCategory = screen.getByTestId("skill-category-Databases");
+    expect(databasesCategory.textContent).toContain("PostgreSQL");
     expect(databasesCategory.textContent).toContain("MySQL");
     expect(databasesCategory.textContent).toContain("MongoDB");
-    expect(databasesCategory.textContent).toContain("PostgreSQL");
 
-    const othersProgrammingCategory = screen.getByTestId(
-      "skill-category-Others Programming Languages",
-    );
-    expect(othersProgrammingCategory.textContent).toContain("PHP");
-    expect(othersProgrammingCategory.textContent).toContain("Python");
-    expect(othersProgrammingCategory.textContent).toContain("Java");
+    const programmingCategory = screen.getByTestId("skill-category-Programming Languages");
+    expect(programmingCategory.textContent).toContain("Python");
+    expect(programmingCategory.textContent).toContain("PHP");
+    expect(programmingCategory.textContent).toContain("Java");
 
-    const othersCategory = screen.getByTestId("skill-category-Others");
-    expect(othersCategory.textContent).toContain("Git");
-    expect(othersCategory.textContent).toContain("Linux");
-    expect(othersCategory.textContent).toContain("Bash");
-    expect(othersCategory.textContent).toContain("WebSockets");
-    expect(othersCategory.textContent).toContain("GraphQL");
-    expect(othersCategory.textContent).toContain("REST APIs");
-    expect(othersCategory.textContent).toContain("WebRTC");
-    expect(othersCategory.textContent).toContain("Microservices");
-    expect(othersCategory.textContent).toContain("TDD");
-    expect(othersCategory.textContent).toContain("CI/CD");
-    expect(othersCategory.textContent).toContain("Agile Methodologies");
+    const testingCategory = screen.getByTestId("skill-category-Testing & Quality");
+    expect(testingCategory.textContent).toContain("Jest");
+    expect(testingCategory.textContent).toContain("Vitest");
+    expect(testingCategory.textContent).toContain("Playwright");
+    expect(testingCategory.textContent).toContain("TDD");
+
+    const devopsCategory = screen.getByTestId("skill-category-DevOps & Cloud");
+    expect(devopsCategory.textContent).toContain("Git");
+    expect(devopsCategory.textContent).toContain("GitHub");
+    expect(devopsCategory.textContent).toContain("GitLab");
+    expect(devopsCategory.textContent).toContain("Docker");
+    expect(devopsCategory.textContent).toContain("AWS");
+    expect(devopsCategory.textContent).toContain("DigitalOcean");
+    expect(devopsCategory.textContent).toContain("Proxmox");
+    expect(devopsCategory.textContent).toContain("Linux");
+    expect(devopsCategory.textContent).toContain("Bash");
+    expect(devopsCategory.textContent).toContain("CI/CD");
+
+    const archCategory = screen.getByTestId("skill-category-Architecture & Practices");
+    expect(archCategory.textContent).toContain("Microservices");
+    expect(archCategory.textContent).toContain("Agile Methodologies");
   });
 
   it("renders section with responsive grid layout", () => {
