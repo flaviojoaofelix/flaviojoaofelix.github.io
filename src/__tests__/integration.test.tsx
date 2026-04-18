@@ -71,6 +71,6 @@ describe("App integration", () => {
     const main = container.querySelector("#main-content");
     expect(main).toBeInTheDocument();
     const children = main?.children;
-    expect(children).toHaveLength(6);
+    expect(children).toHaveLength(8);
   });
 });
