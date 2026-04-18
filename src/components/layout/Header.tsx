@@ -10,6 +10,8 @@ const NAV_ITEMS = [
   { key: "home", href: "#hero" },
   { key: "about", href: "#about" },
   { key: "experience", href: "#experience" },
+  { key: "education", href: "#education" },
+  { key: "certifications", href: "#certifications" },
   { key: "skills", href: "#skills" },
   { key: "projects", href: "#projects" },
   { key: "contact", href: "#contact" },

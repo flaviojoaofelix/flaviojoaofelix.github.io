@@ -47,4 +47,28 @@ export interface Project {
   // description comes from i18n: t(`projects.${id}.description`)
 }
 
+export interface EducationInstitution {
+  readonly id: string;
+  readonly courses: readonly EducationCourse[];
+}
+
+export interface EducationCourse {
+  readonly id: string;
+  readonly period: {
+    readonly start: string; // ISO "YYYY-MM"
+    readonly end: string; // ISO "YYYY-MM" or "present"
+  };
+  readonly isCurrent: boolean;
+  readonly hours?: number;
+  readonly tags: readonly string[];
+}
+
+export interface Certification {
+  readonly id: string;
+  readonly name: string; // i18n key reference
+  readonly issuer: string;
+  readonly date: string; // ISO "YYYY-MM"
+  readonly url?: string;
+}
+
 export type Language = "en" | "pt-BR" | "es";

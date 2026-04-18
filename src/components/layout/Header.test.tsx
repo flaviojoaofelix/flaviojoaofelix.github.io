@@ -24,18 +24,20 @@ describe("Header", () => {
     expect(logo).toHaveAttribute("href", "#hero");
   });
 
-  it("renders all 6 navigation links with correct hrefs", () => {
+  it("renders all 8 navigation links with correct hrefs", () => {
     render(<Header />);
     const nav = screen.getByTestId("header").querySelector("nav");
     expect(nav).toBeTruthy();
 
     const links = nav?.querySelectorAll("a");
-    expect(links?.length).toBe(6);
+    expect(links?.length).toBe(8);
 
     const hrefs = Array.from(links ?? []).map((link) => link.getAttribute("href"));
     expect(hrefs).toContain("#hero");
     expect(hrefs).toContain("#about");
     expect(hrefs).toContain("#experience");
+    expect(hrefs).toContain("#education");
+    expect(hrefs).toContain("#certifications");
     expect(hrefs).toContain("#skills");
     expect(hrefs).toContain("#projects");
     expect(hrefs).toContain("#contact");
