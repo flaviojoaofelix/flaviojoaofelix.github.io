@@ -2,7 +2,9 @@ import "@/i18n";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { AboutSection } from "@/components/sections/AboutSection";
+import { CertificationsSection } from "@/components/sections/CertificationsSection";
 import { ContactSection } from "@/components/sections/ContactSection";
+import { EducationSection } from "@/components/sections/EducationSection";
 import { ExperienceSection } from "@/components/sections/ExperienceSection";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { ProjectsSection } from "@/components/sections/ProjectsSection";
@@ -28,6 +30,8 @@ function App() {
         <HeroSection />
         <AboutSection />
         <ExperienceSection />
+        <EducationSection />
+        <CertificationsSection />
         <SkillsSection />
         <ProjectsSection />
         <ContactSection />
