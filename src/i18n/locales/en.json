@@ -3,6 +3,8 @@
     "home": "Home",
     "about": "About",
     "experience": "Experience",
+    "education": "Education",
+    "certifications": "Certifications",
     "skills": "Skills",
     "projects": "Projects",
     "contact": "Contact"
@@ -44,6 +46,47 @@
         "Assembly and maintenance of computers",
         "Remote support"
       ]
+    }
+  },
+  "education": {
+    "title": "Education",
+    "label": "Formation",
+    "acate": {
+      "institution": "ACATE — Santa Catarina Technology Association",
+      "location": "Florianópolis, Santa Catarina, Brazil",
+      "geracao-tec": {
+        "degree": "Geração TEC — PHP Programming Training Course"
+      }
+    },
+    "trybe": {
+      "institution": "Trybe",
+      "location": "Distance Learning",
+      "fullstack": {
+        "degree": "Full Stack Web Development"
+      }
+    }
+  },
+  "certifications": {
+    "title": "Certifications",
+    "label": "Credentials",
+    "viewCertificate": "View Certificate",
+    "trybe-primeiros-passos": {
+      "name": "First Steps in Programming"
+    },
+    "trybe-intro-javascript": {
+      "name": "Introductory JavaScript Course"
+    },
+    "trybe-fundamentos-web": {
+      "name": "Web Development Fundamentals"
+    },
+    "trybe-frontend": {
+      "name": "Front-end Development"
+    },
+    "trybe-backend": {
+      "name": "Back-end Development"
+    },
+    "limit-leader": {
+      "name": "Limit Leader Training — Coaching, Motivation and Leadership Course"
     }
   },
   "skills": {
