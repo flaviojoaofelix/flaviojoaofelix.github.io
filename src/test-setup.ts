@@ -1,5 +1,31 @@
 import "@testing-library/jest-dom/vitest";
 
+const OriginalLocale = Intl.Locale;
+
+const PatchedLocale = class extends OriginalLocale {
+  maximize() {
+    try {
+      return super.maximize();
+    } catch {
+      return new OriginalLocale(this.toString());
+    }
+  }
+
+  minimize() {
+    try {
+      return super.minimize();
+    } catch {
+      return new OriginalLocale(this.toString());
+    }
+  }
+};
+
+Object.defineProperty(Intl, "Locale", {
+  writable: true,
+  configurable: true,
+  value: PatchedLocale,
+});
+
 Object.defineProperty(window, "matchMedia", {
   writable: true,
   value: (query: string) => ({
