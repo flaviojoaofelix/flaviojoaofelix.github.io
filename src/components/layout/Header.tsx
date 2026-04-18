@@ -10,6 +10,8 @@ const NAV_ITEMS = [
   { key: "home", href: "#hero" },
   { key: "about", href: "#about" },
   { key: "experience", href: "#experience" },
+  { key: "education", href: "#education" },
+  { key: "certifications", href: "#certifications" },
   { key: "skills", href: "#skills" },
   { key: "projects", href: "#projects" },
   { key: "contact", href: "#contact" },
@@ -22,15 +24,15 @@ export function Header() {
 
   return (
     <header
-      className="fixed top-0 z-50 w-full border-b border-[var(--border)] bg-[color-mix(in_oklab,var(--background)_72%,transparent)]/80 backdrop-blur-md"
+      className="fixed top-0 z-50 w-full border-b border-border bg-[color-mix(in_oklab,var(--background)_72%,transparent)]/80 backdrop-blur-md"
       data-testid="header"
     >
       <div className="mx-auto flex h-14 max-w-5xl items-center justify-between px-4">
         <a
-          className="inline-flex items-center gap-2 font-mono text-xs font-semibold tracking-[0.28em] text-[var(--foreground)] uppercase"
+          className="inline-flex items-center gap-2 font-mono text-xs font-semibold tracking-[0.28em] text-(--foreground) uppercase"
           href="#hero"
         >
-          <span className="h-2 w-2 rounded-full bg-[var(--accent)] shadow-[0_0_18px_var(--accent)]" />
+          <span className="h-2 w-2 rounded-full bg-(--accent) shadow-[0_0_18px_var(--accent)]" />
           FJF.DEV
         </a>
 
@@ -40,7 +42,7 @@ export function Header() {
               <Button
                 variant="ghost"
                 size="sm"
-                className="font-mono text-[11px] tracking-[0.18em] text-[var(--muted-foreground)] uppercase transition-colors hover:text-[var(--foreground)]"
+                className="font-mono text-[11px] tracking-[0.18em] text-(--muted-foreground) uppercase transition-colors hover:text-(--foreground)"
               >
                 {t(`nav.${item.key}`)}
               </Button>
@@ -66,7 +68,7 @@ export function Header() {
       </div>
 
       {mobileMenuOpen && (
-        <nav className="flex flex-col gap-1 border-t border-[var(--border)] bg-[var(--surface)]/95 px-4 pb-3 pt-2 md:hidden">
+        <nav className="flex flex-col gap-1 border-t border-border bg-(--surface)/95 px-4 pb-3 pt-2 md:hidden">
           {NAV_ITEMS.map((item) => (
             <a href={item.href} key={item.key} onClick={() => setMobileMenuOpen(false)}>
               <Button
